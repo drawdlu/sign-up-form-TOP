@@ -59,20 +59,93 @@ body {
     background-color: blue;
 }
 
-.form-container div:first-child {
+.introduction {
     height: 35%;
 
-    background-color: aqua;
+    background-color: #fafafa;
+    position: relative;
 }
 
-.form-container div:nth-child(2) {
-    height: 35%;
-
-    background-color: aquamarine;
+.introduction > div {
+    padding-top: 14rem;
+    position: absolute;
+    left: 3rem;
+    bottom: 3rem;
 }
 
-.form-container div:last-child {
+p {
+    width: 55ch;
+    line-height: 1.5;
+    font-weight: 500;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.introduction span {
+    font-style: italic;
+}
+
+.form {
     height: 30%;
+    margin-top: 0;
+    background-color: #ffffff;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    box-shadow: 1px 5px 5px lightgrey, .5px -.5px 5px #f5f5f5;
+    position: relative;
+    z-index: 2;
+}
 
-    background-color: antiquewhite;
+.form p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.form-row > div {
+    display: inline-block;
+    padding-right: 5rem;
+}
+
+.form-row {
+    padding-bottom: 1.3rem;
+}
+
+input, label{
+    display: block;
+}
+
+label {
+    font-size: .7rem;
+    padding-bottom: .3rem;
+    color: #333333;
+    border-color: #ffffff;
+}
+
+input {
+    appearance: none;
+    height: 1.3rem;
+    width: 35ch;
+    border: 1px solid #E5E7EB;
+    padding:.2rem .5rem;
+    border-radius: 3px;
+}
+
+input:invalid {
+    border-color: #C5172E;
+}
+
+input:invalid + span {
+    content: "wrong pass";
+}
+
+input:focus {
+    border: 1px solid #3D3BF3;
+    outline: none;
+    box-shadow: 1px 3px 5px lightgrey;
+}
+
+.form-button {
+    height: 35%;
+
+    background-color: #fafafa;
 }
