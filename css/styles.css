@@ -149,3 +149,44 @@ input:focus {
 
     background-color: #fafafa;
 }
+
+.form-button > div {
+    padding: 2rem 3rem;
+}
+
+button {
+    padding: .8rem 3rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+    box-shadow: 1px 3px 5px lightgrey;
+}
+
+button:focus,
+button:hover {
+    background-color: #697b5a;
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(3px)
+}
+
+.form-button p {
+    font-weight: lighter;
+    font-size: .9rem;
+    padding-top: 1.4rem;
+}
+
+.form-button a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+}
+
+.form-button a:hover,
+.form-button a:focus {
+    color: #7a8a6c;
+}
